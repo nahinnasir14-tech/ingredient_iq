@@ -1,0 +1,3 @@
+# IngredientIQ
+
+🥗 **IngredientIQ** is an AI-Powered Food Safety Scanner built with Flutter tailored for Pakistani consumers. The application allows users to configure custom health profiles (e.g., Diabetic, Allergic) and utilize their mobile device camera to scan nutrition labels. Leveraging the Gemini 2.5 Flash API, the app instantly parses ingredients to generate safety verdicts, detailed risk assessments, and localized Urdu breakdowns.
