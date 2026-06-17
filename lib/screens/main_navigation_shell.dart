@@ -14,7 +14,7 @@ class MainNavigationShell extends StatefulWidget {
 }
 
 class _MainNavigationShellState extends State<MainNavigationShell> {
-  int _currentIndex = 0; // Starts on the brand new Home Dashboard now!
+  int _currentIndex = 0; // Starts on the branded Home Dashboard
   List<String> activeUserProfileFlags = ['Diabetic', 'Weight Loss'];
   List<Map<String, dynamic>> _scanHistory = [];
 
@@ -45,7 +45,7 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
     }
   }
 
-  // Save updated history locally to the S23 Ultra storage block
+  // Save updated history locally to the device storage block
   Future<void> _saveHistoryToDevice(List<Map<String, dynamic>> updatedHistory) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('scan_history_logs', jsonEncode(updatedHistory));
